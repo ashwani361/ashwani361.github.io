@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+			
+.navbar {
+  width: 100%;
+  background-color: rgb(116, 111, 111);
+  overflow: hidden;
+  position: fixed;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  z-index: 9999;
+
+}
+
+.navbar a {
+  border-radius: 45px/50px;
+  float: left;
+  padding: 12px;
+  color:white;
+  text-decoration:underline;
+  font-size: 22px;
+}
+
+.btn-primary.custom-btn {
+	background-color: #000;
+  border-color: #000;
+}
+
+.navbar a:hover {
+  background-color: #fcbcf3;
+}
+
+.active {
+  background-color: #18d118;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display:block;
+    padding: 12px;
+    margin:6px;
+  }
+}
+
+footer {
+  background-color:#e8fd70;
+  padding: 10px;
+  background-image: url('5.jpg');
+  background-repeat: no-repeat;
+  background-attachment:fixed; 
+  background-size: 100% 100%;
+}
+footer .fa {
+  padding: 6px;
+  width:100px;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 10px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin:10px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.jumbotron {
+  text-align: center;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  text-shadow: 1px 1px #000;
+}
+.bg-cover {
+  background-image: url('53.jpg');
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 420px;
+  perspective: 1000px;
+  border-radius:15px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius:15px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateX(180deg);
+  border-radius:15px;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius:15px;
+}
+
+.flip-card-front {
+  background-color: rgb(0, 0, 0);
+  color: rgb(15, 15, 15);
+  border-radius:15px;
+}
+
+.flip-card-back {
+  background-color: #000000;
+  color: rgb(50, 233, 59);
+  transform: rotateX(180deg);
+  position:relative;
+  border-radius: 15px;
+  padding:10px;
+  height: auto;
+}
+
+.x{
+  max-width: 30%;
+  max-height: 100%;
+  height: 100%;
+  width: auto\9; /* ie8 */
+  padding:10px;
+  border-radius: 20px;
+}
+.y{
+  max-width: 67%;
+  height: 100%;
+  max-height:100%;
+  width: auto\9; /* ie8 */
+  padding:10px;
+  border-radius: 20px;
+}
+.pq:hover {
+  opacity: 0.7;
+}
